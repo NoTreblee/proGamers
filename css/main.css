@@ -1,0 +1,241 @@
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-padding-top: 82px;
+}
+
+body {
+  position: relative;
+  font-family: 'Montserrat', sans-serif;
+  background-color: #fff;
+}
+
+h2 {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.underline {
+  margin: 0 auto 40px;
+  width: 60px;
+  height: 4px;
+  background-color: #039dff;
+}
+
+.shadow-bg {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.blue-text {
+  color: #039dff;
+}
+
+.whitecolor {
+  color: #fff;
+}
+
+nav {
+  text-transform: uppercase;
+  z-index: 1;
+  -webkit-transition: background-color 0.6s;
+  transition: background-color 0.6s;
+}
+
+nav a,
+nav i {
+  color: #fff;
+}
+
+nav a:hover {
+  color: #039dff;
+}
+
+nav .fa-bars {
+  padding: 10px;
+}
+
+nav .navbar-brand {
+  font-weight: bold;
+}
+
+nav .active {
+  color: #039dff;
+}
+
+header {
+  color: #fff;
+}
+
+header h1 {
+  text-transform: uppercase;
+}
+
+header p {
+  font-size: 14px;
+}
+
+header .hero-img {
+  position: relative;
+  height: 100vh;
+  background-image: url("../img/header-mini.jpg");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  z-index: 0;
+}
+
+header .hero-shadow {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: -10;
+}
+
+header .hero-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
+  padding: 10px;
+  text-align: center;
+  z-index: 5;
+}
+
+header .btn-outline-light {
+  text-transform: uppercase;
+}
+
+header .fa-chevron-down {
+  position: absolute;
+  font-size: 30px;
+  bottom: 20px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  color: #fff;
+}
+
+.aboutus {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+}
+
+.aboutus i {
+  margin-top: 20px;
+  font-size: 30px;
+}
+
+.aboutus .aboutus-card-title {
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+.aboutus .aboutus-card-text {
+  font-size: 14px;
+}
+
+.aboutus .aboutus-hover {
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.aboutus .aboutus-hover:hover {
+  color: #039dff;
+}
+
+.aboutus-hero {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+  position: relative;
+  background-image: url("../img/technology-2818664_640.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  color: #fff;
+  z-index: 0;
+}
+
+.aboutus-hero .aboutus-shadow {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: -5;
+}
+
+.aboutus-hero .aboutus-hero-item {
+  margin: 10px 0;
+}
+
+.aboutus-hero .aboutus-hero-item i {
+  font-size: 36px;
+}
+
+.aboutus-hero .aboutus-hero-item .aboutus-hero-item {
+  font-size: 24px;
+}
+
+@media (min-width: 375px) {
+  header h1 {
+    font-size: 36px;
+  }
+  header p {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 768px) {
+  header h1 {
+    font-size: 42px;
+  }
+  header p {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 992px) {
+  html {
+    scroll-padding-top: 72px;
+  }
+  header .hero-img {
+    background-image: url("../img/header-big.jpg");
+  }
+  .aboutus-hero {
+    background-image: url("../img/technology-2818664.jpg");
+  }
+}
+/*# sourceMappingURL=main.css.map */
