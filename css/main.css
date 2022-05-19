@@ -14,7 +14,7 @@ html {
 body {
   position: relative;
   font-family: 'Montserrat', sans-serif;
-  background-color: #fff;
+  background-color: #ebecf2;
 }
 
 h2 {
@@ -29,23 +29,19 @@ h2 {
   background-color: #039dff;
 }
 
-.shadow-bg {
-  background-color: rgba(0, 0, 0, 0.8);
-}
-
 .blue-text {
   color: #039dff;
 }
 
-.whitecolor {
-  color: #fff;
+.shadow-bg {
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
 nav {
   text-transform: uppercase;
+  -webkit-transition: background-color .6s;
+  transition: background-color .6s;
   z-index: 1;
-  -webkit-transition: background-color 0.6s;
-  transition: background-color 0.6s;
 }
 
 nav a,
@@ -74,6 +70,7 @@ header {
 }
 
 header h1 {
+  font-size: 30px;
   text-transform: uppercase;
 }
 
@@ -125,25 +122,12 @@ header .btn-outline-light {
 
 header .fa-chevron-down {
   position: absolute;
-  font-size: 30px;
-  bottom: 20px;
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
+  bottom: 20px;
+  font-size: 30px;
   color: #fff;
-}
-
-.aboutus {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  height: 100vh;
 }
 
 .aboutus i {
@@ -161,8 +145,8 @@ header .fa-chevron-down {
 }
 
 .aboutus .aboutus-hover {
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
+  -webkit-transition: color .3s;
+  transition: color .3s;
 }
 
 .aboutus .aboutus-hover:hover {
@@ -170,21 +154,11 @@ header .fa-chevron-down {
 }
 
 .aboutus-hero {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  height: 100vh;
   position: relative;
-  background-image: url("../img/technology-2818664_640.jpg");
-  background-attachment: fixed;
+  background-image: url("../img/about-hero-small.jpg");
+  background-position: center;
   background-size: cover;
-  color: #fff;
+  color: #ddd;
   z-index: 0;
 }
 
@@ -205,8 +179,127 @@ header .fa-chevron-down {
   font-size: 36px;
 }
 
-.aboutus-hero .aboutus-hero-item .aboutus-hero-item {
+.aboutus-hero .aboutus-hero-item .aboutus-hero-title {
   font-size: 24px;
+}
+
+.portfolio .carousel-item {
+  position: relative;
+  height: 600px;
+}
+
+.portfolio .carousel-caption {
+  position: absolute;
+  left: 0;
+  right: 0;
+  padding: 40px 0;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.portfolio .carousel-indicators {
+  padding-bottom: 20px;
+}
+
+.prices .price-box {
+  margin: 20px 10px;
+  padding: 30px;
+  background-color: #fff;
+  -webkit-box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
+          box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
+  -webkit-transition: -webkit-transform .3s;
+  transition: -webkit-transform .3s;
+  transition: transform .3s;
+  transition: transform .3s, -webkit-transform .3s;
+}
+
+.prices .price-box h3 {
+  color: #039dff;
+  text-transform: uppercase;
+}
+
+.prices .price-box span {
+  font-weight: bold;
+}
+
+.prices .price-box i {
+  padding: 0 5px;
+  font-size: 24px;
+}
+
+.prices .price-box button {
+  padding: 10px 20px;
+  text-transform: uppercase;
+}
+
+.prices .price-box .price-tag {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.prices .price-box:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+.prices .price-info {
+  margin-top: 30px;
+}
+
+.prices .price-info a {
+  text-decoration: none;
+}
+
+.team {
+  position: relative;
+  background-image: url("../img/team-bg.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  z-index: 0;
+}
+
+.team h2 {
+  color: #ddd;
+}
+
+.team .team-shadow {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: -5;
+}
+
+.team .card {
+  -webkit-transition: -webkit-transform .3s;
+  transition: -webkit-transform .3s;
+  transition: transform .3s;
+  transition: transform .3s, -webkit-transform .3s;
+}
+
+.team .card img {
+  height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.team .card i {
+  padding: 10px;
+}
+
+.team .card:hover {
+  -webkit-transform: scale(0.96);
+          transform: scale(0.96);
+}
+
+.team .card-title {
+  margin-bottom: 20px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.team .card-body {
+  height: 160px;
 }
 
 @media (min-width: 375px) {
@@ -228,14 +321,20 @@ header .fa-chevron-down {
 }
 
 @media (min-width: 992px) {
-  html {
-    scroll-padding-top: 72px;
-  }
-  header .hero-img {
-    background-image: url("../img/header-big.jpg");
+  nav {
+    height: 82px;
   }
   .aboutus-hero {
-    background-image: url("../img/technology-2818664.jpg");
+    background-image: url("../img/about-hero-big.jpg");
+  }
+  .prices .price-info {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 1200px) {
+  header .hero-img {
+    background-image: url("../img/header-big.jpg");
   }
 }
 /*# sourceMappingURL=main.css.map */
